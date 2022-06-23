@@ -1,0 +1,13 @@
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/footer.js"></script>
+<script type="text/javascript" src="/js/header-animation.js"></script>
+<script type="text/javascript" src="/js/header-intro-animation.js"></script>
+<script type="text/javascript" src="/js/intro-footer.js"></script>
+<script type="text/javascript" src="/js/intro-footer.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/JQuery3.3.1.js"></script>
+<script type="text/javascript" src="/js/lightgallery.js"></script>
+<script type="text/javascript" src="/js/lightslider.js"></script>
+<script type="text/javascript" src="/js/popper.js"></script>
+<script type="text/javascript" src="/js/products-slider-animation.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>

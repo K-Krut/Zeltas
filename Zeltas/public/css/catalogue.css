@@ -1,0 +1,42 @@
+.container-fluid {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.p-lg-5 {
+    padding: 3rem !important
+}
+
+.pt-lg-5, .py-lg-5 {
+    padding-top: 3rem !important
+}
+
+.pr-lg-5, .px-lg-5 {
+    padding-right: 3rem !important
+}
+
+.pb-lg-5, .py-lg-5 {
+    padding-bottom: 3rem !important
+}
+
+.pl-lg-5, .px-lg-5 {
+    padding-left: 3rem !important
+}
+
+
+.row {
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+

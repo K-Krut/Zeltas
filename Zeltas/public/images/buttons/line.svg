@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="800" viewBox="0 0 22 800">
+  <defs>
+    <image id="image" width="1" height="800" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAMgCAYAAADiDQiHAAACoklEQVRIic1XQZIcMQiDfuce84Y8Pls1StltI4TxnnLIpWvbxlggoZ6137++8JibPW5mj8UD5va4y9oK8fHAeN1/mXNjPHzsYqz5XGMWnp27zDyPjVfsv3xmHhswwec+1yJLg9SYHnv3rSiSrlTlWMB1Fii7PjYIsqCf6UfAvmjDcPY0OkRoC6m05L2NCaAgn11HIgXrZmGrMBiXW4mTiqzc613wLtBTqsFMOtYoRy9n5Z40dGZ+sUwYNbMIpCX0XZOOLz52bbVXcw2ibC99SZmVKBWSa+vAEA8xpIHYI5TnY8vW0zBx8nbwSi8FHo2I4Co4GaGM5RSN3xEEFX4S8ETHXbuGOFvJc3GaVP7rL6G1Ku9G8le7Sa4SLUnjrIoo1mL0lzn2xQpYW5MUvHd37Tpvh/9dMjPpHUH0LxltNZ5meiACvvpLZrUodqxBziLR2LntP3vAfsa8oa3dwaWakUM8G+kjEi6vzV6lhoPggmr2Hqn359cFiNsg35SFeUovdv1SFnsw49Kr7zUjljBkxJWASI8V8UucNwIVKzK9F/us6VqNM437EPiIg7Dwtr0SdctMBNAOJSpUu++VEoKUKo6FM7B/SYlKwMvgj1hQsOjr4u2Em5jp0GtLEnnkPOBScKXovqzSJhGSaZvSz7Jx4tP0vvCB9MknFhnJhM+bUiFnqd1KbSRwaJWu01hMpnDpbI5aRiE09WWnrxd1MitEFbf1RioNC7mxc00djvNbk+qUKYxWJSX4hqoIyWOi5uWf5GtKPMTlQU9MFkQEZULPostYMQQ6Fd50nOUnhd17cLreYVqn11VvD9+9jgaHrugl2Uh6lRKSrSvJ+TMm2rBmyqhsL1JpPw7xqyBxqdYS/26yxfxNwyGex/58f5+9/z8fZvYXqwDCTg8rD70AAAAASUVORK5CYII="/>
+  </defs>
+  <use id="Линия_1" data-name="Линия 1" x="10" xlink:href="#image"/>
+  <use id="Слой_1" data-name="Слой 1" transform="scale(22 0.956)" xlink:href="#image"/>
+</svg>

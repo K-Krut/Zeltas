@@ -1,0 +1,7 @@
+{
+    "require": {
+        "laravel/helpers": "^1.5",
+        "darryldecode/cart": "~4.0",
+        "hardevine/shoppingcart": "^3.1"
+    }
+}

@@ -1,0 +1,51 @@
+* {
+    /*background-image: url("public/images/patterns/background_main_2.png");*/
+}
+
+.app-title {
+    margin-top: 10%;
+}
+
+.sub-title {
+    font-size: 45px;
+}
+
+.row {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*margin: -15px;*/
+}
+
+.table th {
+    text-align: left;
+    font-size: 35px;
+    color: #A08A7E;
+    font-family: 'AverageRegular', sans-serif;
+    font-weight: lighter;
+    width: 150px;
+    margin: 50px;
+    padding: 5px;
+    border: 1px solid rgba(201, 182, 170, 0.35);
+}
+
+.table td {
+    color: #756256;
+    border: 1px solid rgba(201, 182, 170, 0.35);
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #A08A7E;
+    font-family: Giovanna, sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
