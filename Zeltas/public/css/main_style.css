@@ -41,7 +41,7 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 25px;
+    /*font-size: 25px;*/
 }
 
 .logo {
@@ -387,7 +387,7 @@ img {
     font-family: 'Giovanna', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 50px;
     line-height: 86px;
     color: #C7AB9B;
 }
@@ -402,7 +402,7 @@ img {
 }
 
 .about-button {
-    padding-top: 165px;
+    /*padding-top: 165px;*/
     position: relative;
 }
 
