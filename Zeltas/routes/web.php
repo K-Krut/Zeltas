@@ -10,7 +10,6 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MailController;
 
-;
 
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +28,9 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/delivery', [HomeController::class, 'delivery'])->name('delivery');
 
+//Route::get('/search', [HomeController::class, 'search'])->name('search');
+
+
 Route::get('/catalogue', [HomeController::class, 'catalogue'])->name('catalogue');
 Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
 
@@ -46,17 +48,19 @@ Route::get('/cart/item/{id}/remove', [CartController::class, 'removeItem'])->nam
 Route::get('/cart/clear', [CartController::class, 'clearCart'])->name('checkout.cart.clear');
 
 
+Route::get('/contact', [MailController::class, 'contact'])->name('contact');
+Route::post('/contact_form_process', [MailController::class, 'contactForm'])->name('contact_form_process');
+
+
 Route::middleware('auth')->group(function () {
+
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::get('/checkout', [CheckoutController::class, 'getCheckout'])->name('checkout.index');
     Route::post('/checkout/order', [CheckoutController::class, 'placeOrder'])->name('checkout.place.order');
 
-    Route::get('checkout/payment/complete', [CheckoutController::class, 'complete'])->name('checkout.payment.complete');
-
-    Route::get('account/orders', [CheckoutController::class, 'getOrders'])->name('account.orders');
-
 });
+
 
 
 Route::middleware('guest')->group(function () {
@@ -69,8 +73,4 @@ Route::middleware('guest')->group(function () {
     Route::get('/forgot', [AuthController::class, 'showForgotForm'])->name('forgot');
     Route::post('/forgot_process', [AuthController::class, 'forgot'])->name('forgot_process');
 });
-
-Route::get('/contact', [MailController::class, 'contact'])->name('contact');
-Route::post('/contact_form_process', [MailController::class, 'contactForm'])->name('contact_form_process');
-
 
