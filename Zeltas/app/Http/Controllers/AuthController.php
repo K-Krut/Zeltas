@@ -84,3 +84,4 @@ class AuthController extends Controller
         return redirect(route("login"));
     }
 }
+//Mail::send( ['html' => 'emails.newinvoice'], ['text' => $emailtext],

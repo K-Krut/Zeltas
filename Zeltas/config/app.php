@@ -196,7 +196,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\RepositoryServiceProvider::class,
         App\Providers\ViewComposerServiceProvider::class,
-        \Darryldecode\Cart\CartServiceProvider::class
+        \Darryldecode\Cart\CartServiceProvider::class,
+
 
     ],
 

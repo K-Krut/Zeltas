@@ -7,21 +7,21 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ForgotPassword extends Mailable
+class OrderMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $password;
+    protected $data = array();
 
-    public function __construct($password)
+    public function __construct($data)
     {
-        $this->password = $password;
+        $this->data = $data;
     }
 
     public function build()
     {
-        return $this->view('emails.forgot')->with([
-            "password" => $this->password
+        return $this->view('emails.order')->with([
+            "data" => $this->data
         ]);
     }
 }

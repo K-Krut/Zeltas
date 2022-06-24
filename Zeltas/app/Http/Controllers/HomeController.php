@@ -25,4 +25,9 @@ class HomeController extends Controller
         return view('delivery');
     }
 
+    public function search()
+    {
+        return view('search');
+    }
+
 }
