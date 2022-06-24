@@ -16,6 +16,7 @@
             padding: 0;
             background-image: url("https://github.com/K-Krut/Zeltas/blob/master/Zeltas/public/images/patterns/background_main_2.png");
         }
+
         a {
             color: #A08A7E;
             font-family: Giovanna, sans-serif;
@@ -234,8 +235,8 @@
                                                 <div style="font-family: sans-serif">
                                                     <div class="txtTinyMce-wrapper"
                                                          style="font-size: 40px; mso-line-height-alt: 16.8px; color: #A08A7E;  line-height: 1.2; font-family: Giovanna, sans-serif;">
-                                                        <h1 style="margin: 0; font-size: 40px; text-align: center">
-                                                            <strong>Contact Request</strong></h1>
+                                                        <h1 style="margin: 0; font-size: 35px; text-align: center">
+                                                            <strong>Thank you for the order!</strong></h1>
                                                     </div>
                                                 </div>
                                             </td>
@@ -296,14 +297,31 @@
                                                 <div style="font-family: sans-serif">
                                                     <div class="txtTinyMce-wrapper"
                                                          style="font-size: 25px; mso-line-height-alt: 16.8px; color: #A08A7E;  line-height: 1.2; font-family: Giovanna, sans-serif; font-weight: lighter;">
-                                                        <h1 style="margin: 0; font-size: 30px;">Contact Email: {{$email}}</h1>
+                                                        <h1 style="margin: 0; font-size: 30px;">Order
+                                                            Number: {{$data->order_number}}</h1>
+                                                    </div>
+                                                    <br><br><br><br><br>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding-left:20px;padding-right:20px;">
+                                                <div style="font-family: sans-serif">
+                                                    <div class="txtTinyMce-wrapper"
+                                                         style="font-size: 25px; mso-line-height-alt: 16.8px; color: #A08A7E;  line-height: 1.2; font-family: Giovanna, sans-serif; font-weight: lighter;">
+                                                        <h1 style="margin: 0; font-size: 30px;">Billing
+                                                            information:</h1>
                                                     </div>
                                                     <br>
                                                     <br>
                                                     <br>
                                                     <div class="txtTinyMce-wrapper"
-                                                         style="font-size: 25px; mso-line-height-alt: 16.8px; color: #A08A7E;  line-height: 1.2; font-family: Giovanna, sans-serif; font-weight: lighter;">
-                                                        <h1 style="margin: 0; font-size: 30px;">{{$text}}</h1>
+                                                         style="font-size: 20px; mso-line-height-alt: 16.8px; color: #A08A7E;  line-height: 1.2; font-family: Giovanna, sans-serif; font-weight: lighter;">
+                                                        <h1 style="margin: 0; font-size: 20px;">{{$data->first_name}} {{$data->last_name}}</h1><br>
+                                                        <h1 style="margin: 0; font-size: 20px;">{{$data->address}}, {{$data->city}}, {{$data->country}}, {{$data->post_code}}</h1><br>
+                                                        <h1 style="margin: 0; font-size: 20px;">{{$data->phone_number}}</h1><br>
+                                                        <h1 style="margin: 0; font-size: 20px;">Notes:</h1><br>
+                                                        <h1 style="margin: 0; font-size: 2px;">{{$data->notes}}</h1>
                                                     </div>
                                                 </div>
                                             </td>

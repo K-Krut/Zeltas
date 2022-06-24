@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @include('includes.style')
 </head>
-<body style='background-image: url("public/images/patterns/background_main_2.png");'>
+<body style='background-image: url("images/patterns/background_main_2.png");'>
 
 @include('includes.navigation')
 

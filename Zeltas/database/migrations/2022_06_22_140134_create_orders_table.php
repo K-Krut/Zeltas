@@ -9,11 +9,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->string('order_number')->unique();
-            $table->unsignedInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
-
+            $table->integer('user_id')->references('id')->on('users')->onDelete('CASCADE');
             $table->enum('status', ['pending', 'processing', 'completed', 'decline'])->default('pending');
             $table->decimal('grand_total', 20, 6);
             $table->unsignedInteger('item_count');

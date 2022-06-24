@@ -24,7 +24,7 @@
                                 <img src="{{asset('images/zeltas-wave.png')}}" class="img-fluid card-img-top"
                                      style="position: relative; width: 100%; height: 100%; object-fit: fill; top: -25px">
                             @endif
-                            <h2 class="price">{{$product->price}}</h2>
+                            <h2 class="price">${{$product->price}}</h2>
                         </a>
                     </div>
                 @empty

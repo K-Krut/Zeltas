@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('titale-block')Login
+@section('title-block')Login
 @endsection
 
 @section('content')

@@ -70,7 +70,7 @@
                                         style="font-family: Giovanna, sans-serif; color: #A08A7E; font-size: 50px">
                                         Clear Cart</h2>
                                     <div class="text-block" style="margin: 35px 20% 35px 20%; text-align: right">
-                                        <h1 style="text-align: left; font-size: 35px; color: #A08A7E;">Total
+                                        <h1 style="text-align: left; font-size: 25px; color: #A08A7E;">Total
                                             cost: ${{ \Cart::getSubTotal() }} </h1>
                                     </div>
                                     <div class="text-block" style="margin: 35px 20% 35px 20%;">

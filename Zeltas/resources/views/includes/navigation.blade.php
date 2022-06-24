@@ -26,7 +26,7 @@
             <li><a href="{{route('catalogue')}}" class="icon catalog-icon"></a></li>
         </ul>
         <div class="logo">
-            <h4 style="margin-top: 2%">želtas</h4>
+            <a href="{{route('home')}}"><h4 style="margin-top: 2%">želtas</h4></a>
         </div>
         <ul class="nav-links left-part-links">
             <li><a href="#" class="icon search-icon"></a></li>

@@ -23,31 +23,37 @@
         </div>
         <div class="item-slider">
             <div class="item-slides">
-                {{--                @forelse($product->images->count() === 0)--}}
-                {{--                    <div class="item-slide">--}}
-                {{--                        <div class="rings">--}}
-                {{--                            <div class="big-ring">--}}
-                {{--                                <h1 style="z-index: 1;">{{$product->name}}</h1>--}}
-                {{--                                <div class="small-ring"></div>--}}
-                {{--                            </div>--}}
-                {{--                        </div>--}}
-                {{--                    </div>--}}
-                {{--                @endforelse--}}
-                @foreach($product->images as $image)
+                @if($product->images->count() > 0)
+                    @foreach($product->images as $image)
+                        <div class="item-slide">
+                            <div class="rings">
+                                <div class="big-ring">
+                                    <h1 style="z-index: 1;  width: 200%">{{$product->name}}</h1>
+                                    <div class="small-ring">
+                                        <img
+                                            src="{{asset('images/jewelry/'.$image->image)}}"
+                                            style="position: relative; width: 100%; height: 100%;"
+                                            class="img-fluid card-img-top item-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @else
                     <div class="item-slide">
                         <div class="rings">
                             <div class="big-ring">
-                                <h1 style="z-index: 1;">{{$product->name}}</h1>
+                                <h1 style="z-index: 1; width: 200%">{{$product->name}}</h1>
                                 <div class="small-ring">
                                     <img
-                                        src="{{asset('images/jewelry/'.$image->image)}}"
+                                        src="{{asset('images/logo.png')}}"
                                         style="position: relative; width: 100%; height: 100%;"
                                         class="img-fluid card-img-top item-image">
                                 </div>
                             </div>
                         </div>
                     </div>
-                @endforeach
+                @endif
             </div>
             <div class="buttons-section">
                 <button class="button button-prev" onclick="plusDivs(-1)">
@@ -131,7 +137,7 @@
                                         <input type="hidden" name="qty" value="{{ 1 }}">
                                         <input type="hidden" name="productId" value="{{ $product->id }}">
                                         <input type="hidden" name="price" id="finalPrice" value="{{ $product->price }}">
-                                        <input type="hidden" value="{{ $product->image }}"  name="image">
+                                        <input type="hidden" value="{{ $product->image }}" name="image">
                                     </dd>
                                 </dl>
                             </div>
