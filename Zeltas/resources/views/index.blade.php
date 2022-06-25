@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title-block')
-    KEK
+    Zeltas
 @endsection
 
 @section('content')
@@ -103,5 +103,10 @@
             </div>
         </section>
         @include('includes.product-slider')
+        <style>
+            .Product-slider {
+                margin-top: -10%;
+            }
+        </style>
     </div>
 @endsection

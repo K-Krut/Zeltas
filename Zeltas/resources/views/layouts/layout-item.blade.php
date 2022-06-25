@@ -26,7 +26,5 @@
 </div>
 
 @include('includes.footer')
-{{--@include('includes.scripts')--}}
-{{--@include('includes.scripts-item')--}}
 </body>
 </html>

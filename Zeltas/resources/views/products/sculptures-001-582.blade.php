@@ -1,4 +1,4 @@
-@extends('layouts.layout-item')
+extends('layouts.layout-item')
 
 @section('titale-block')
     Owl Bronze

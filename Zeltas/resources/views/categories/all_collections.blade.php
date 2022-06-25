@@ -23,9 +23,9 @@
                                         class="img-fluid card-img-top item-image">
                                 </div>
                             @else
-                                <h2 class="product-title" style="z-index: 1">{{$product->name}}</h2>
-                                <img src="{{asset('images/zeltas-wave.png')}}" class="img-fluid card-img-top"
-                                     style="width: 100%; height: 100%; margin-top: -25px; max-width: 250px;">
+                                <div class="item-gallery-empty">
+                                    <h2 class="product-title" style="z-index: 1">{{$product->name}}</h2>
+                                </div>
                             @endif
                             <h2 class="price">{{$product->price}}</h2>
                         </a>

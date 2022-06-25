@@ -26,6 +26,5 @@
             @include('includes.style-catalogue')
         </section>
     </div>
-
 @endsection
 

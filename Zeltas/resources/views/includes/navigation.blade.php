@@ -29,8 +29,8 @@
             <a href="{{route('home')}}"><h4 style="margin-top: 2%">želtas</h4></a>
         </div>
         <ul class="nav-links left-part-links">
-            <li><a href="#" class="icon search-icon"></a></li>
-            <li><a href="{{ route('checkout.cart') }}" class="icon basket-icon"></a></li>
+            <li><a href="{{ route('search')}}" class="icon search-icon"></a></li>
+            <li><a href="{{ route('checkout.cart')}}" class="icon basket-icon"></a></li>
         </ul>
     </nav>
 </header>

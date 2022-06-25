@@ -14,7 +14,7 @@
                     <div class="sign-in-htm">
                         <div class="group">
                             <label class="label">Email</label>
-                            <input style="opacity: .2; @error('username') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                            <input style="opacity: .2; @error('email') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
                                    id="email" name="email" type="text" class="input">
                         </div>
                         <div class="group">

@@ -28,40 +28,58 @@
                                 </header>
                                 <div class="group">
                                     <label class="label">First name</label>
-                                    <input type="text" class="form-control" name="first_name">
+                                    <input
+                                        style="opacity: .2; @error('first_name') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="text" class="form-control" id="first_name" name="first_name">
                                 </div>
                                 <div class="group">
                                     <label class="label">Last name</label>
-                                    <input type="text" class="form-control" name="last_name">
+                                    <input
+                                        style="opacity: .2; @error('last_name') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="text" class="form-control" id="last_name" name="last_name">
                                 </div>
                                 <div class="group">
                                     <label class="label">Address</label>
-                                    <input type="text" class="form-control" name="address">
+                                    <input
+                                        style="opacity: .2; @error('address') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="text" class="form-control" id="address" name="address">
                                 </div>
                                 <div class="group">
                                     <label class="label">City</label>
-                                    <input type="text" class="form-control" name="city">
+                                    <input
+                                        style="opacity: .2; @error('city') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="text" class="form-control" id="city" name="city">
                                 </div>
                                 <div class="group">
                                     <label class="label">Country</label>
-                                    <input type="text" class="form-control" name="country">
+                                    <input
+                                        style="opacity: .2; @error('country') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="text" class="form-control" id="country" name="country">
                                 </div>
                                 <div class="group">
                                     <label class="label">Post Code</label>
-                                    <input type="text" class="form-control" name="post_code">
+                                    <input
+                                        style="opacity: .2; @error('post_code') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="text" class="form-control" id="post_code" name="post_code">
                                 </div>
                                 <div class="group">
                                     <label class="label">Phone Number</label>
-                                    <input type="text" class="form-control" name="phone_number">
+                                    <input
+                                        style="opacity: .2; @error('phone_number') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="text" class="form-control" id="phone_number" name="phone_number">
                                 </div>
                                 <div class="group">
                                     <label class="label">Email Address</label>
-                                    <input type="email" class="form-control" name="email"
-                                           value="{{ auth()->user()->email }}" disabled>
+                                    <input
+                                        style="opacity: .2; @error('email') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        type="email" class="form-control" id="email" name="email"
+                                        value="{{ auth()->user()->email }}" disabled>
                                 </div>
                                 <div class="group">
                                     <label class="label">Order Notes</label>
-                                    <textarea class="form-control" name="notes" rows="6"></textarea>
+                                    <textarea
+                                        style="opacity: .2; @error('notes') border:darkred; background-color:darkred; color: #c1b2a0; @enderror"
+                                        class="form-control" id="notes" name="notes" rows="6"></textarea>
                                 </div>
                             </div>
                             <div class="navigation-collections" style="margin: 30px auto">
