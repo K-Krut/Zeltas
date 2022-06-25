@@ -13,34 +13,25 @@ use App\Http\Controllers\MailController;
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/delivery', [HomeController::class, 'delivery'])->name('delivery');
-
-//Route::get('/search', [HomeController::class, 'search'])->name('search');
-
-
 Route::get('/catalogue', [HomeController::class, 'catalogue'])->name('catalogue');
-Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
+
+Route::get('/search', [HomeController::class, 'search'])->name('search');
+Route::get('/search_result', [ProductController::class, 'searchProducts'])->name('search_result');
 
 
 Route::get('/all_collections', [CollectionController::class, 'showAll'])->name('all_collections');
 Route::get('/collection/{slug}', [CollectionController::class, 'show'])->name('collection.show');
-
+Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
 Route::get('/metal/{slug}', [MetalController::class, 'show'])->name('metal.show');
-
 Route::get('/product/{slug}', [ProductController::class, 'show'])->name('product.show');
+
+
+
 
 Route::post('/product/add/cart', [ProductController::class, 'addToCart'])->name('product.add.cart');
 Route::get('/cart', [CartController::class, 'getCart'])->name('checkout.cart');

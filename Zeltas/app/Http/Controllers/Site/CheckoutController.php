@@ -26,6 +26,17 @@ class CheckoutController extends Controller
 
     public function placeOrder(Request $request)
     {
+        $request->validate([
+//            'email' => ['required', 'email'],
+//            'first_name' => 'required|string|max:255',
+//            'last_name' => 'required|string|max:255',
+//            'address' => 'required|string|max:255',
+//            'city' => 'required|string|max:255',
+//            'country' => 'required|string|max:255',
+//            'post_code' => 'required|postal_code_with:zip_code',
+//            'phone_number' => 'required|regex:/+(01)[0-9]{9}/',
+//            'notes' => 'string|max:255',
+        ]);
 
         $order = $this->orderRepository->storeOrderDetails($request->all());
 

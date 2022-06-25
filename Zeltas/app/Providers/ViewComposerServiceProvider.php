@@ -29,5 +29,9 @@ class ViewComposerServiceProvider extends ServiceProvider
         View::composer('categories.all_collections', function ($view) {
             $view->with('products', Product::orderByRaw('-code ASC')->get());
         });
+
+        View::composer('includes.product-slider', function ($view) {
+            $view->with('featuredProducts', Product::where('featured', '=', 1)->orderByRaw('-code ASC')->get());
+        });
     }
 }

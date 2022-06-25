@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 
+use GuzzleHttp\Psr7\Request;
+
 class HomeController extends Controller
 {
     public function home()
